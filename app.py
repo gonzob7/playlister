@@ -28,7 +28,7 @@ def playlists_show(playlist_id):
 @app.route('/playlists/new')
 def playlists_new():
     '''Create a new playlist'''
-    return render_template('playlists_new.html', title='New Playlist')
+    return render_template('playlists_new.html', playlist={}, title='New Playlist')
 
 @app.route('/playlists', methods=['POST'])
 def playlists_submit():
